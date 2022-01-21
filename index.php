@@ -1,10 +1,18 @@
 <?php  
 
+require 'function.php';
+
 $newArray = [
 	'age' => 27,
 	'HairColor' => "black",
 	'Name' => "Binayak",
 	'collection' => ['firstorder' => 'first','seconorder' => 'second']
 ];
+$a = '**';
 
-require 'index-view.php';
+dd(preg_match('/([A-z]...)*/', $a)); //boolea
+
+preg_match_all(pattern, subject, matches)
+
+
+// require 'index-view.php';
