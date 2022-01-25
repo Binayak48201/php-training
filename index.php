@@ -10,9 +10,9 @@ $newArray = [
 ];
 $a = '**';
 
-dd(preg_match('/([A-z]...)*/', $a)); //boolea
+// dd(preg_match('/([A-z]...)*/', $a)); //boolea
 
-preg_match_all(pattern, subject, matches)
+// preg_match_all(pattern, subject, matches);
 
 
 // require 'index-view.php';
