@@ -7,15 +7,6 @@ function dd($data) {
 	echo '</pre>';
 }
 
-function connection()
-{
-	try{
-		return new PDO('mysql:host=127.0.0.1;dbname=tutorial','root','');
-	}catch(PDOException $e){
-		dd('Could not connect');
-	}
-}
-
 function preg(){
 	$url = "https://www.sharesansar.com/company/adbl";
 	$ch = curl_init($url);
