@@ -16,6 +16,7 @@
 			<option value="2">Dogs</option>
 		</select>
 		<input type="text" hidden name="hidden" value="<?php echo time(); ?>">
+		<input type="file" name="file">
 		<button type="submit">Submit</button>
 	</form>
 </body>

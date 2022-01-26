@@ -1,0 +1,88 @@
+SQL Constraints
+
+-> Used to specify rules for data in a table.
+->limit the type of data that can go into a table.
+-> Ensuring the accuracy and reliability of the data in the table
+
+Constraints commonly used terms;
+
+NOT NULL => Ensure that a colum cannot have a null value.
+UNIQUE => Ensure that all values in a column are different.
+PRIMARY KEY => Combination of a NOT NULL and UNIQUE.
+DEFAULT => Set a default value for a column
+INDEX => Used to create & reterive (SELECT) data from the database very quickly.
+		Eg. Use cannot see th indexes, they are just used to supped up search query.
+
+<!-- QUERY Execution Process -->
+select * from actor;
+
+-- INSET QUERY
+
+INSERT INTO table_name (column1,column2) VALUES (Value1,VALUE2);
+
+INSERT INTO actor (first_name,last_name) VALUES('Binayak','Giri');
+
+-- UPdate QUERY
+
+UPDATE table_name SET column1 = value 1 ,column2 = value2 WHERE condition;
+
+UPDATE actor SET first_name = 'John', last_name = 'Doe' WHERE actor_id = 203;
+
+-- DELETE QUERY
+
+DELETE FROM table_name WHERE condition;
+
+DELETE FROM actor where actor_id = 202;
+
+<!-- InnoDB enable -->
+
+<!-- DATABASE COMMIT -->
+A commit is the updating of a records in a database.
+A commit refers to the saving of data permanently after a set tentative changes.
+<!-- DATABASE ROLLEBACK -->
+A roolback is the operation of restoring a database to the previous state by canceling a specific transaction.
+
+<!-- LEFT JOIN -->
+select 
+			customer.customer_id,
+			customer.first_name,
+			customer.last_name,
+			count(rental_id) as total_rented
+from customer
+left join rental 
+on rental.customer_id = customer.customer_id
+group by customer.customer_id;
+
+<!-- Explain a query -->
+ EXPLAIN (QUERY STATEMENT);
+
+select 
+			customer.customer_id,
+			customer.first_name,
+			customer.last_name,
+			count(rental_id) as total_rented,
+			address.address as store_address
+from customer
+left join rental 
+on rental.customer_id = customer.customer_id
+left join address on 
+address.address_id = (
+	select address_id from store where store.store_id = customer.store_id
+)
+group by customer.customer_id;	
+<!-- Refractored query -->
+select 
+			customer.customer_id,
+			customer.first_name,
+			customer.last_name,
+			count(rental_id) as total_rented,
+			address.address as store_address
+from customer
+left join rental 
+on rental.customer_id = customer.customer_id
+left join store on store.store_id = customer.store_id
+left join address on address.address_id = store.address_id
+group by customer.customer_id;
+
+
+
