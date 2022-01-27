@@ -11,7 +11,7 @@ class Connection
 				$config['password']
 			);
 		}catch(PDOException $e){
-			dd('Could not connect');
+			die('Could not connect');
 		}
 	}
 }
