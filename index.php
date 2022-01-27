@@ -20,6 +20,3 @@ require $routes->direct($redirect_root);
 
 
 
-
-
-

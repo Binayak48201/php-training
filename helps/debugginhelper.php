@@ -6,5 +6,5 @@ echo gettype((boolean)$new);
 
 die();
 
-var_dump(expression);
+var_dump('');
 
