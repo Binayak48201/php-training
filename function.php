@@ -6,7 +6,6 @@ function dd($data) {
 	die(var_dump($data));
 	echo '</pre>';
 }
-
 function preg(){
 	$url = "https://www.sharesansar.com/company/adbl";
 	$ch = curl_init($url);

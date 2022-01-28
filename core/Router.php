@@ -2,21 +2,37 @@
 
 class Router
 {
-	protected $routes = [];
+	protected $routes = [
+		'GET' => [],
+		'POST' => []
+	];
 
-	public function define($route)
+	// public function define($route)
+	// {
+	// 	$this->routes = $route;
+	// }
+
+	public function get($url,$controller)
 	{
-		$this->routes = $route;
+		$this->routes['GET'][$url] = $controller;
 	}
 
-	public function direct($url) 
+	public function post($url,$controller)
 	{
-		if(array_key_exists($url, $this->routes)){
-			return $this->routes[$url]; 
+		$this->routes['POST'][$url] = $controller;
+	}
+	/*
+		@params $url => about
+		@parms $requestType => Server Request -> GET|POST
+	*/
+	public function direct($url,$requestType) 
+	{
+		if(array_key_exists($url, $this->routes[$requestType])){
+			return $this->routes[$requestType][$url];  
 		}
 		throw new Exception('No route found');
 	}
-	// Cliff Hanger
+
 	public static function load($file)
 	{
 		$routes = new static;

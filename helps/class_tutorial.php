@@ -11,6 +11,23 @@
 // }
 // dd(test(1));
 
+$this-> special variable that's always available inside an object's scope, and it refers to the current object.
+
+__construct
+-> Contains 2 underscore
+->in php 2 underscore denotes magic method
+->special function that's called when we instantiate an object
+
+:: (Static propery & Method)
+A static property or method is one that can bbe used without instantiating the object,
+Also called scope resolution operation
+Static property is variable that belings to a class only, not an object
+We can't refer to $this inside a static method.
+Syntax
+Classname::function()
+
+
+
 class Team 
 {
 	public $name; 
