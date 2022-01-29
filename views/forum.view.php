@@ -11,7 +11,7 @@ require_once 'component/header.php';
 
   <div class="form-group">
     <label for="description">Description:</label>
-    <textarea class="form-control" id="description" name="description" placeholder="Enter the escription " rows="3"
+    <textarea class="form-control" id="description" name="description" placeholder="Enter the description " rows="3"
       required></textarea>
   </div>
 
