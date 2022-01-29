@@ -18,20 +18,29 @@ class QueryBuilder
 		return $statement->fetchAll(PDO::FETCH_CLASS);
 	}
 
-	public function insert($table,$data)
+	public function insert($table, $data)
 	{
 		$insert = sprintf(
 			'insert into %s (%s) values (%s)',
 			$table,
-			implode(', ',array_keys($data)),
-			':' . implode(', :',array_keys($data)));
+			implode(', ', array_keys($data)),
+			':' . implode(', :', array_keys($data))
+		);
 
-		try{
+		try {
 			$statement = $this->pdo->prepare($insert);
 
 			$statement->execute($data);
-		}catch(Exception $e){
+		} catch (Exception $e) {
 			die($e);
 		}
+	}
+
+	public function getDataById($table)
+	{
+		$query = $this->pdo->prepare("select * from $table where id = :id");
+		$query->execute();
+		// return $query;
+		return $query->fetch();
 	}
 }
