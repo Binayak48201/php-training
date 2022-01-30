@@ -1,5 +1,4 @@
 <?php
-$status = 1;
-$content = $query->getDataById('forum','id');
+$content = $query->selectAll('forum');
 
 require 'views/forum/show.view.php';

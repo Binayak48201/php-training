@@ -7,4 +7,4 @@ $query->insert('forum', [
 ]);
 
 
-header('Location: add-view');
+header('Location:index');

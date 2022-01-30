@@ -36,11 +36,19 @@ class QueryBuilder
 		}
 	}
 
-	public function getDataById($table)
+	// public function showByID($table, $id)
+	// {
+	// 	$query = $this->pdo->prepare("SELECT * from $table where id = $id");
+	// 	$query->execute();
+	// 	// return $query;
+	// 	return $query;
+	// }
+
+	public function delete($table, $id)
 	{
-		$query = $this->pdo->prepare("select * from $table where id = :id");
+		$query = $this->pdo->prepare("DELETE from $table where id = $id");
 		$query->execute();
 		// return $query;
-		return $query->fetch();
+		return $query;
 	}
 }

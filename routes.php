@@ -19,3 +19,4 @@ $routes->post('forum/add-forum', 'controller/forum/add-forum.php');
 // index forum
 $routes->get('forum/index', 'controller/forum/index.php');
 $routes->get('forum/show', 'controller/forum/show.php');
+$routes->get('forum/delete', 'controller/forum/delete.php');
