@@ -1,7 +1,6 @@
 <div class="m-5">
     <div class="card">
         <?php if ($forum) : ?>
-        <!-- <?php //if (count($forum) > 0): ?> -->
             <div class="card-header">
                 <h1 class="d-flex justify-content-center">Index Page</h1>
                 <a href="add-view" class="btn btn-success">Add Forum</a>
@@ -28,10 +27,8 @@
                                 <td><a href="show" title="<?= $f->status; ?>" class="<?= $f->status == 1 ? 'btn btn-success' : 'btn btn-danger' ?>"><?= $f->status; ?></a></td>
                                 <td> <a title="Doesnot Work" href="" class="btn btn-success">Edit</a> </td>
                                 <td>
-                                    <!-- <form action="" method="post"> -->
                                     <a title="Delete" href="" class="btn btn-danger">Delete</a>
                                 </td>
-                                <!-- </form> -->
                             </tr>
                         <?php endforeach; ?>
                     </tbody>
