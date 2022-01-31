@@ -103,3 +103,19 @@ $test = array_map(function($post){
 },$posts);
 
 dd($test);
+
+
+
+namespace
+
+. Avoiding the needs for classes with 47 char long.
+
+. aim of the namespace feature is to provude and easy 
+way to isolate classes and function from 
+various liabries.
+
+AC/DC       =>  Rock => test
+Metallica  =>  HardRoc => test
+
+namespace App/User
+namespace App/Packagel

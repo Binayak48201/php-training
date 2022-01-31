@@ -1,5 +1,10 @@
 <?php
 
+namespace App\Core\database;
+
+use Exception;
+use PDO;
+
 class QueryBuilder
 {
 	private $pdo;
