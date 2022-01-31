@@ -8,9 +8,14 @@
 // ]);
 
 $routes->get('','controller/index.php');
+$routes->get('blogs','controller/index.php');
 $routes->get('about','controller/about.php');
 $routes->get('contact','controller/contact.php');
+$routes->post('blogs','controller/add-name.php');
+
+
+
 /*$routes->post('name','controller/add-name.php');*/
-$routes->post('blogs','controller/blogView.php');
+/*$routes->post('','controller/blogView.php');*/
 
 

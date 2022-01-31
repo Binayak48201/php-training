@@ -35,25 +35,7 @@ class QueryBuilder
 		}
 	}
 
-    /*public function retrieve($table,$data)
-    {
-       /* $insert = sprintf(
-            'insert into %s (%s) values (%s)',
-            $table,
-            implode(', ',array_keys($data)),
-            ':' . implode(', :',array_keys($data)));
 
-        $retrieve = 'select * from {$table}';
-
-        try{
-            $statement = $this->pdo->prepare($retrieve);
-
-            $statement->execute($data);
-        }catch(Exception $e){
-            die($e);
-        }
-    }
-*/
 
 
 

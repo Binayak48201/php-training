@@ -70,15 +70,8 @@
                    <br>
                    <br>
                     <ul>
-                        <?php foreach($users as $user) : ?>
-                           <!-- <li>
-                                <?/*= $user->title */?>
-                                <?/*= $user->name */?>
-                                <?/*= $user->category */?>
-                                <?/*= $user->status */?>
-                                <?/*= $user->text */?>
-                                <?/*= $user->text */?>
-                            </li>-->
+                        <?php foreach($blog as $user) : ?>
+
 
                             <div class="w3-container w3-center" >
 

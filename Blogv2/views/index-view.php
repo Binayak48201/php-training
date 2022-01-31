@@ -116,6 +116,24 @@
         background-color: #925E78;
     }
     /*Till here*/
+
+    #cont{
+
+        background-color: #BD93BD;
+    }
+    #blogtitle{
+        background-color: #F2EDEB;
+    }
+    #BLO{
+        background-color: #BD93BD;
+    }
+    #bodypart{
+        background-color: #F2EDEB;
+    }
+    #bloaa{
+        background-color: #F2EDEB;
+    }
+
 </style>
 
 
@@ -127,116 +145,210 @@
 
 
 
-        <div id="blogpage" class="w3-container ">
-            <h1>This is the BLOG PAGE</h1>
+    <div id="blogpage" class="w3-container ">
+        <h1>This is the BLOG PAGE</h1>
 
-            <!--menu-->
+        <!--menu-->
 
-            <div id="navbar" class="w3-bar ">
+        <div id="navbar" class="w3-bar ">
 
 
-                <a href="controller/dashboard.php" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-purple w3-hover-text-black w3-padding-16 " style="width:20%; font-size: 24px"><i class="fa fa-home"></i> </a>
-                <a href="#" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-purple w3-hover-text-black w3-padding-16" style="width:20%; font-size: 24px">1111</a>
-                <a href="#" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-purple w3-hover-text-black w3-padding-16" style="width:20%; font-size: 24px">2222</a>
+            <a href="controller/dashboard.php" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-purple w3-hover-text-black w3-padding-16 " style="width:20%; font-size: 24px"><i class="fa fa-home"></i> </a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-purple w3-hover-text-black w3-padding-16" style="width:20%; font-size: 24px">1111</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-purple w3-hover-text-black w3-padding-16" style="width:20%; font-size: 24px">2222</a>
 
-                <a href="#" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-purple w3-hover-text-black w3-padding-16" style="width:20% ; font-size: 24px">3333</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-purple w3-hover-text-black w3-padding-16" style="width:20% ; font-size: 24px">3333</a>
 
-                <a href="#" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-purple w3-hover-text-black w3-padding-16" style="width:20% ; font-size: 24px">Link 3</a>
-            </div>
+            <a href="#" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-purple w3-hover-text-black w3-padding-16" style="width:20% ; font-size: 24px">Link 3</a>
+        </div>
+    </div>
+
+
+
+
+    <div>
+
+
+        <div id="aaa" class="w3-container " style="width: 880px; height: 820px; margin-left: 600px; margin-top: 100px; font-size: 18px; color: black ">
+
+            <form method="POST" action="blogs">
+
+                <div class="w3-container " style="width: 800px; height: 50px">
+
+
+                    <br><br><br><br>
+
+                    <label for="fname" style="margin-right: 100px">Blog Title</label>
+                    <input type="text" id="fname" name="title" placeholder="Blog name..">
+                    <br><br>
+
+                    <label for="lname" style="margin-right: 67px">Author Name</label>
+                    <input type="text" id="lname" name="name" placeholder="Your name..">
+                    <br><br>
+
+                    <label for="country" style="margin-right: 100px">Category</label>
+
+
+                    <select id="country" name="category" style="width: 225px; height: 30px" >
+                        <option value="Romance">Romance</option>
+                        <option value="Sci-Fi">Sci-Fi</option>
+                        <option value="Fiction">Fiction</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label style="margin-right: 10px">Completed</label>
+                    <label class="switch">
+                        <input type="checkbox" name="status">
+                        <span class="slider round"></span>
+                    </label>
+
+
+                    <br><br>
+                    <label >Enter Blog Text</label>
+                    <br><br>
+                    <input type="text" style="width: 600px; height: 300px" placeholder="Enter text here.." name="text">
+                    <br><br>
+                    <input class="w3-hover-light-purple"  id="submit" type="submit" value="Submit" style=" width: 225px"><br>
+                </div>
+
+
+
+            </form>
+
+
+
         </div>
 
 
 
-
-        <div>
-
-
-            <div id="aaa" class="w3-container " style="width: 880px; height: 820px; margin-left: 600px; margin-top: 100px; font-size: 18px; color: black ">
-
-                <form method="POST" action="blogs">
-
-                    <div class="w3-container " style="width: 800px; height: 50px">
+    </div>
 
 
-                        <br><br><br><br>
-
-                        <label for="fname" style="margin-right: 100px">Blog Title</label>
-                        <input type="text" id="fname" name="title" placeholder="Blog name..">
-                        <br><br>
-
-                        <label for="lname" style="margin-right: 67px">Author Name</label>
-                        <input type="text" id="lname" name="name" placeholder="Your name..">
-                        <br><br>
-
-                        <label for="country" style="margin-right: 100px">Category</label>
-
-
-                        <select id="country" name="category" style="width: 225px; height: 30px" >
-                            <option value="Romance">Romance</option>
-                            <option value="Sci-Fi">Sci-Fi</option>
-                            <option value="Fiction">Fiction</option>
-                        </select>
-                        <br>
-                        <br>
-                        <label style="margin-right: 10px">Completed</label>
-                        <label class="switch">
-                            <input type="checkbox" name="status">
-                            <span class="slider round"></span>
-                        </label>
-
-
-                        <br><br>
-                        <label >Enter Blog Text</label>
-                        <br><br>
-                        <input type="text" style="width: 600px; height: 300px" placeholder="Enter text here.." name="text">
-                        <br><br>
-                        <input class="w3-hover-light-purple"  id="submit" type="submit" value="Submit" style=" width: 225px"><br>
-                    </div>
-
-
-
-                </form>
-
-
-
-            </div>
-
-
-
-        </div>
-
-
-            <br><br><br>
+    <br><br><br>
     <div class="w3-container">
 
         <div class="w3-card w3-grey w3-dropdown-hover " style="width: 100%">
 
 
-            </div>
-            <br>
-            <div class=" w3-dropdown-hover ">
-                <div class="w3-button w3-white w3-hover-black" style="width: 400px">Check Posted Data in DB</div>
-                <div class=" w3-dropdown-content w3-bar-block w3-border" style="width: 100%">
+        </div>
+        <br>
+        <div class=" w3-dropdown-hover ">
+            <div class="w3-button w3-white w3-hover-black" style="width: 400px">Check Posted Data in DB</div>
+            <div class=" w3-dropdown-content w3-bar-block w3-border" style="width: 100%">
 
+                <ul>
+                    <?php foreach($users as $user) : ?>
+                        <li>
+                            <?= $user->title ?>
+                            <?= $user->name ?>
+                            <?= $user->category ?>
+                            <?= $user->status ?>
+                            <?= $user->text ?>
+                            <?= $user->text ?>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <div id="cont" class="w3-container  " style="height: 300px; ">
+
+
+
+        <div class="w3-container w3-center " style="margin-top: 300px; height: 5000px">
+            <div id="blogtitle" class="w3-container " >
+                <h2>Here are your Blogs</h2>
+            </div>
+
+            <div  id="BLO" class=" w3-card " style="margin-left: 350px; margin-right: 350px; height: 1000px">
+                <h1>BLOGS</h1>
+
+                <div id="bodypart" class="w3-card "   >
+
+                    <br>
+                    <br>
+                    <br>
+                    <br>
                     <ul>
                         <?php foreach($users as $user) : ?>
-                            <li>
-                                <?= $user->title ?>
-                                <?= $user->name ?>
-                                <?= $user->category ?>
-                                <?= $user->status ?>
-                                <?= $user->text ?>
-                                <?= $user->text ?>
-                            </li>
+
+
+                            <div class="w3-container w3-center" >
+
+
+                                <div class="w3-card-4" style="margin-left: 80px; margin-right: 100px" >
+                                    <header id="bloaa" class="w3-container ">
+                                        <h1><?= $user->title ?> </h1>
+                                    </header>
+                                    <div class="w3-container">
+                                        <p>By <?= $user->name ?></p>
+                                        <hr>
+
+                                        <pre><?= $user->text  ?></pre><br>
+                                    </div>
+                                    <div class="w3-row">
+
+                                        <div class="w3-button w3-round-xlarge w3-white w3-hover-black">
+                                            <h5>Category:<?= $user->category ?></h5>
+                                        </div>
+
+
+                                        <div class="w3-button w3-round-xlarge w3-white w3-hover-black">
+                                            <div class="w3-third w3-center">
+                                                <h5>Status:  <?php
+                                                    if($user->status === 'on')
+
+                                                        echo "Completed";
+                                                    else
+                                                    {
+                                                        echo "Not Completed";
+                                                    }?>
+                                                </h5>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="w3-button w3-round-xlarge w3-white w3-hover-red">
+                                            <h5>DELETE</h5>
+
+                                        </div>
+                                        <br><br><br>
+
+
+                                    </div>
+
+                                </div>
+
+
+
+
+                            </div>
+
+
+
+
+
+
+
+
+                            <br><br><br><br><br>
                         <?php endforeach; ?>
                     </ul>
-
 
                 </div>
 
 
             </div>
 
+        </div>
     </div>
 
 
@@ -245,8 +357,5 @@
 
 
 
-
-
-
 </body>
-</html>			
+</html>
