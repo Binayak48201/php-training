@@ -12,13 +12,10 @@ use App\Core\{App, database\Connection as Connect, database\QueryBuilder as Quer
 // require 'core/Request.php';
 
 App::bind('config', require 'config.php');
-
 App::bind('database', new QueryBuilder(
 	Connect::make(App::get('config')['database'])
 ));
-
 // $pdo = Connection::make($connection['database']);
-
 // return new QueryBuilder($pdo);
 ?>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
