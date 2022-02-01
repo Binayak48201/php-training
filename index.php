@@ -1,10 +1,10 @@
 <?php  
+namespace App\Core;
+require 'vendor/autoload.php';
 
-$query = require 'core/bootstrap.php';
-
-$redirect_root = Request::url();  
+require 'core/bootstrap.php';
 
 require Router::load('routes.php')
-		->direct($redirect_root,Request::method());
+		->direct(Request::url(),Request::method());
 
 
