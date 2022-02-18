@@ -4,7 +4,7 @@
 // 	'' => 'controller/index.php',
 // 	'about' => 'controller/about.php',
 // 	'contact' => 'controller/contact.php',
-// 	'name' => 'controller/add-name.php'
+// 	'name' => 'controller/add-name.php',
 // ]);
 
 $routes->get('','controller/index.php');

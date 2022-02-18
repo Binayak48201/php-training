@@ -7,6 +7,7 @@ interface Name
 
 }
 
-class AnotherClass extends AnotherClass2 implements Name{
-	
+class AnotherClass extends AnotherClass2 implements Name
+{
+
 }

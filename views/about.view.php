@@ -1,7 +1,7 @@
 <?php include('partials/header.view.php'); ?>
 
 <h1>
-	About Page
+	About Pageasdfasfas
 </h1>
 
 <?php include('partials/footer.view.php'); ?>

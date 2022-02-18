@@ -33,10 +33,10 @@ class QueryBuilder
 
 		try{
 			$statement = $this->pdo->prepare($insert);
-
 			$statement->execute($data);
 		}catch(Exception $e){
 			die($e);
 		}
 	}
+	
 }

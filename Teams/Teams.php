@@ -1,12 +1,7 @@
 <?php
-require '../database/Connection.php';
-require '../config.php';
-require '../function.php';
-
-
 class Teams
 {
-    public $name;
+    private static $name = 'test';
     public $member = [];
 
     public function __construct($name, $member = [])
@@ -14,13 +9,30 @@ class Teams
         $this->name = $name;
         $this->member = $member;
     }
-
-    public function addMember($name)
+    public static function addMember()
     {
-        return $this->member[] = $name;
+        return self::$name;
+        // return $this->member[] = $name;
     }
 }
+$object = Teams::$name;
+var_dump($object);
+// $object =  new Teams('PHP');
+// $collection_member->addMember('JAKE');
+$a = [1,2,3];
 
-$collection_member =  new Teams('PHP');
-$collection_member->addMember('JAKE');
-dd($collection_member);
+// array_filter($a );
+
+foreach ($a as $value) {
+         var_dump('test');
+}
+array_map(function($value){
+    var_dump('test');
+}, $a );
+
+$
+
+
+
+
+

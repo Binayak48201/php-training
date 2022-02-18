@@ -1,6 +1,8 @@
 <?php
 
-$query->insert('users',[
+use App\Core\App;
+
+App::get('database')->insert('usersvdd',[
 	'name' => $_POST['name'],
 	'status' => $_POST['status']
 ]);
